@@ -13,10 +13,10 @@
     <title>Freedash Template - The Ultimate Multipurpose admin template</title>
     <!-- Custom CSS -->
     <link href="{{ asset('FD/assets/extra-libs/c3/c3.min.css')}}" rel="stylesheet">
-    <link href="../assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
-    <link href="../assets/extra-libs/jvector/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
+    <link href="{{ asset('FD/assets/libs/chartist/dist/chartist.min.css')}}" rel="stylesheet">
+    <link href="{{ asset('FD/assets/extra-libs/jvector/jquery-jvectormap-2.0.2.css')}}" rel="stylesheet" />
     <!-- Custom CSS -->
-    <link href="../dist/css/style.min.css" rel="stylesheet">
+    <link href="{{ asset('FD/dist/css/style.min.css')}}" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -55,7 +55,7 @@
                     <div class="navbar-brand">
                         <!-- Logo icon -->
                         <a href="index.html">
-                            <img src="../assets/images/freedashDark.svg" alt="" class="img-fluid">
+                            <img src="{{ asset('FD/assets/images/freedashDark.svg')}}" alt="" class="img-fluid">
                         </a>
                     </div>
                     <!-- ============================================================== -->
@@ -206,7 +206,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-bs-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
-                                <img src="../assets/images/users/profile-pic.jpg" alt="user" class="rounded-circle"
+                                <img src="{{ asset('FD/assets/images/users/profile-pic.jpg')}}" alt="user" class="rounded-circle"
                                     width="40">
                                 <span class="ms-2 d-none d-lg-inline-block"><span>Hello,</span> <span
                                         class="text-dark">Jason Doe</span> <i data-feather="chevron-down"
@@ -838,7 +838,7 @@
                                                 <td class="border-top-0 px-2 py-4">
                                                     <div class="d-flex no-block align-items-center">
                                                         <div class="me-3"><img
-                                                                src="../assets/images/users/widget-table-pic1.jpg"
+                                                                src="{{ asset('FD/assets/images/users/widget-table-pic1.jpg')}}"
                                                                 alt="user" class="rounded-circle" width="45"
                                                                 height="45" /></div>
                                                         <div class="">
@@ -876,7 +876,7 @@
                                                 <td class="px-2 py-4">
                                                     <div class="d-flex no-block align-items-center">
                                                         <div class="me-3"><img
-                                                                src="../assets/images/users/widget-table-pic2.jpg"
+                                                                src="{{ asset('FD/assets/images/users/widget-table-pic2.jpg')}}"
                                                                 alt="user" class="rounded-circle" width="45"
                                                                 height="45" /></div>
                                                         <div class="">
@@ -909,7 +909,7 @@
                                                 <td class="px-2 py-4">
                                                     <div class="d-flex no-block align-items-center">
                                                         <div class="me-3"><img
-                                                                src="../assets/images/users/widget-table-pic3.jpg"
+                                                                src="{{ asset('FD/assets/images/users/widget-table-pic3.jpg"
                                                                 alt="user" class="rounded-circle" width="45"
                                                                 height="45" /></div>
                                                         <div class="">
@@ -944,7 +944,7 @@
                                                 <td class="border-bottom-0 px-2 py-4">
                                                     <div class="d-flex no-block align-items-center">
                                                         <div class="me-3"><img
-                                                                src="../assets/images/users/widget-table-pic4.jpg"
+                                                                src="{{ asset('FD/assets/images/users/widget-table-pic4.jpg')}}"
                                                                 alt="user" class="rounded-circle" width="45"
                                                                 height="45" /></div>
                                                         <div class="">
@@ -1011,24 +1011,24 @@
     <!-- ============================================================== -->
     <!-- All Jquery -->
     <!-- ============================================================== -->
-    <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
-    <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ asset('FD/assets/libs/jquery/dist/jquery.min.js')}}"></script>
+    <script src="{{ asset('FD/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js')}}"></script>
     <!-- apps -->
     <!-- apps -->
-    <script src="../dist/js/app-style-switcher.js"></script>
-    <script src="../dist/js/feather.min.js"></script>
-    <script src="../assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
-    <script src="../dist/js/sidebarmenu.js"></script>
+    <script src="{{ asset('FD/dist/js/app-style-switcher.js')}}"></script>
+    <script src="{{ asset('FD/dist/js/feather.min.js')}}"></script>
+    <script src="{{ asset('FD/assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js')}}"></script>
+    <script src="{{ asset('FD/dist/js/sidebarmenu.js')}}"></script>
     <!--Custom JavaScript -->
-    <script src="../dist/js/custom.min.js"></script>
+    <script src="{{ asset('FD/dist/js/custom.min.js')}}"></script>
     <!--This page JavaScript -->
-    <script src="../assets/extra-libs/c3/d3.min.js"></script>
-    <script src="../assets/extra-libs/c3/c3.min.js"></script>
-    <script src="../assets/libs/chartist/dist/chartist.min.js"></script>
-    <script src="../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
-    <script src="../assets/extra-libs/jvector/jquery-jvectormap-2.0.2.min.js"></script>
-    <script src="../assets/extra-libs/jvector/jquery-jvectormap-world-mill-en.js"></script>
-    <script src="../dist/js/pages/dashboards/dashboard1.min.js"></script>
+    <script src="{{ asset('FD/assets/extra-libs/c3/d3.min.js')}}"></script>
+    <script src="{{ asset('FD/assets/extra-libs/c3/c3.min.js')}}"></script>
+    <script src="{{ asset('FD/assets/libs/chartist/dist/chartist.min.js')}}"></script>
+    <script src="{{ asset('FD/assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js')}}"></script>
+    <script src="{{ asset('FD/assets/extra-libs/jvector/jquery-jvectormap-2.0.2.min.js')}}"></script>
+    <script src="{{ asset('FD/assets/extra-libs/jvector/jquery-jvectormap-world-mill-en.js')}}"></script>
+    <script src="{{ asset('FD/dist/js/pages/dashboards/dashboard1.min.js')}}"></script>
 </body>
 
 </html>
